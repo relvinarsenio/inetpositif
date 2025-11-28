@@ -45,7 +45,7 @@
   <meta name="google" content="notranslate" />
   <meta name="rating" content="general" />
   <meta name="revisit-after" content="7 days" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -206,7 +206,7 @@
     --brand-red: #d93025;
     --brand-dark-red: #b71c1c;
     --text-main: #111827;
-    --text-muted: #6b7280;
+    --text-muted: #4b5563;
     --bg-page: #f3f4f6;
     --surface: #ffffff;
     --border: #e5e7eb;
@@ -218,13 +218,14 @@
     --button-bg: #111827;
     --button-text: #ffffff;
     --button-hover-bg: #000000;
-    --dot-color: #d1d5db;
+    --dot-color: #9ca3af;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
+      --brand-red: #ef4444;
       --text-main: #ededed;
-      --text-muted: #a1a1aa;
+      --text-muted: #d4d4d8;
       --bg-page: #000000;
       --surface: #0a0a0a;
       --border: #262626;
@@ -236,7 +237,7 @@
       --button-bg: #ef4444;
       --button-text: #ffffff;
       --button-hover-bg: #dc2626;
-      --dot-color: #404040;
+      --dot-color: #52525b;
     }
   }
 
