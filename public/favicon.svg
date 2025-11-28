@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 600" width="64" height="64" role="img" aria-label="Logo Kementerian Komunikasi dan Digital">
+  <path d="M256 16L32 112v160c0 142.97 134.77 260 224 295 89.23-35 224-152.03 224-295V112L256 16z" fill="#d93025" />
+  <path d="M256 64L80 144v144c0 99.41 100.81 168 176 192 75.19-24 176-92.59 176-192V144L256 64z" fill="#ea4335" />
+  <path d="M216 200v160" stroke="white" stroke-width="38" stroke-linecap="round" />
+  <path d="M296 200H136" stroke="white" stroke-width="38" stroke-linecap="round" />
+  <path d="M336 232v96" stroke="white" stroke-width="26" stroke-linecap="round" />
+  <path d="M288 280h96" stroke="white" stroke-width="26" stroke-linecap="round" />
+</svg>
