@@ -8,7 +8,8 @@
     Siren, 
     Ban,
     ChevronLeft,
-    Globe
+    Globe,
+    Info
   } from 'lucide-svelte';
 
   let currentDate = "";
@@ -63,7 +64,6 @@
     content="Situs ini tidak dapat diakses karena termasuk dalam kategori yang dilarang berdasarkan peraturan di Indonesia." />
   <meta name="twitter:image" content="https://trustpositif.komdigi.go.id/twitter-image.jpg" />
   <link rel="canonical" href="https://trustpositif.komdigi.go.id" />
-  
   <title>Internet Positif - Akses Dibatasi | Komdigi Trust+ Filtering System</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   {@html `<script type="application/ld+json">
@@ -84,10 +84,11 @@
 
 <div class="page-wrapper">
   <div class="split-card">
+    <!-- Left Side (Branding) -->
     <aside class="brand-sidebar">
       <div class="brand-content">
         <div class="shield-container">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
             <path d="M12 8v4"></path>
@@ -102,6 +103,7 @@
       <div class="sidebar-pattern"></div>
     </aside>
 
+    <!-- Right Side (Content) -->
     <main class="main-content">
       <div class="content-header">
         <div class="status-badge">
@@ -275,8 +277,7 @@
   .brand-sidebar {
     background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-dark-red) 100%);
     color: white;
-    /* Compact padding for mobile */
-    padding: 24px 20px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +285,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
   }
 
   .brand-sidebar::before {
@@ -296,37 +296,29 @@
     pointer-events: none;
   }
 
-  /* Compact Shield for Mobile */
   .shield-container {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
   }
 
-  .shield-container :global(svg) {
-    width: 48px;
-    height: 48px;
-    transition: all 0.3s ease;
-  }
-
-  /* Compact H1 for Mobile */
   .brand-sidebar h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .divider {
-    width: 30px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     background: rgba(255,255,255,0.3);
     border-radius: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .subtitle {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.2em;
     opacity: 0.9;
@@ -515,6 +507,7 @@
     gap: 20px;
     font-size: 12px;
     color: var(--text-muted);
+    /* border-top: 1px solid var(--border); Removed to avoid double border look */
     padding-top: 10px;
     text-align: center;
   }
@@ -570,33 +563,11 @@
       min-width: 320px;
       text-align: left;
       align-items: flex-start;
-      /* Original Padding for Desktop */
       padding: 60px 40px;
     }
 
-    /* Restore Desktop Sizes */
     .brand-sidebar h1 {
       font-size: 42px;
-      margin-bottom: 24px;
-    }
-
-    .shield-container {
-      margin-bottom: 24px;
-    }
-
-    .shield-container :global(svg) {
-      width: 80px;
-      height: 80px;
-    }
-
-    .divider {
-      width: 40px;
-      height: 4px;
-      margin-bottom: 24px;
-    }
-
-    .subtitle {
-      font-size: 12px;
     }
 
     .main-content {
