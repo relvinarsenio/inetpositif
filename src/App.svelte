@@ -84,7 +84,6 @@
 
 <div class="page-wrapper">
   <div class="split-card">
-    <!-- Left Side (Branding) -->
     <aside class="brand-sidebar">
       <div class="brand-content">
         <div class="shield-container">
@@ -103,7 +102,6 @@
       <div class="sidebar-pattern"></div>
     </aside>
 
-    <!-- Right Side (Content) -->
     <main class="main-content">
       <div class="content-header">
         <div class="status-badge">
@@ -273,7 +271,6 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
   }
 
-  /* Sidebar (Mobile: Top Header) */
   .brand-sidebar {
     background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-dark-red) 100%);
     color: white;
@@ -324,7 +321,6 @@
     opacity: 0.9;
   }
 
-  /* Main Content */
   .main-content {
     padding: 30px;
     flex: 1;
@@ -376,7 +372,6 @@
     padding-bottom: 8px;
   }
 
-  /* Violation Grid */
   .violation-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -415,7 +410,6 @@
     color: var(--text-main);
   }
 
-  /* Legal List */
   .legal-list {
     display: flex;
     flex-direction: column;
@@ -457,7 +451,6 @@
     line-height: 1.5;
   }
 
-  /* Action Area */
   .action-area {
     display: flex;
     flex-direction: column;
@@ -498,7 +491,6 @@
     transform: translateY(-1px);
   }
 
-  /* Footer */
   .content-footer {
     margin-top: 30px;
     display: flex;
@@ -507,7 +499,6 @@
     gap: 20px;
     font-size: 12px;
     color: var(--text-muted);
-    /* border-top: 1px solid var(--border); Removed to avoid double border look */
     padding-top: 10px;
     text-align: center;
   }
@@ -551,7 +542,6 @@
     color: var(--dot-color);
   }
 
-  /* Desktop Layout (Split Screen) */
   @media (min-width: 768px) {
     .split-card {
       flex-direction: row;
