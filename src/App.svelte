@@ -86,15 +86,17 @@
   <div class="split-card">
     <aside class="brand-sidebar">
       <div class="brand-content">
-        <div class="shield-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            <path d="M12 8v4"></path>
-            <path d="M12 16h.01"></path>
-          </svg>
+        <div class="brand-heading">
+          <div class="shield-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M12 8v4"></path>
+              <path d="M12 16h.01"></path>
+            </svg>
+          </div>
+          <h1>INTERNET<br>POSITIF</h1>
         </div>
-        <h1>INTERNET<br>POSITIF</h1>
         <div class="divider"></div>
         <div class="subtitle">TRUST+ FILTERING SYSTEM</div>
       </div>
@@ -294,8 +296,16 @@
   }
 
   .shield-container {
-    margin-bottom: 20px;
+    margin: 0;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+  }
+
+  .brand-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
   }
 
   .brand-sidebar h1 {
@@ -303,7 +313,7 @@
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 20px;
+    margin: 0;
   }
 
   .divider {
@@ -558,6 +568,13 @@
 
     .brand-sidebar h1 {
       font-size: 42px;
+    }
+
+    .brand-heading {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
     }
 
     .main-content {
