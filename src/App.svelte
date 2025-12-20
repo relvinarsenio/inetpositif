@@ -8,8 +8,7 @@
     Siren, 
     Ban,
     ChevronLeft,
-    Globe,
-    Info
+    Globe
   } from 'lucide-svelte';
 
   let currentDate = "";
@@ -65,7 +64,7 @@
   <meta name="twitter:image" content="https://trustpositif.komdigi.go.id/twitter-image.jpg" />
   <link rel="canonical" href="https://trustpositif.komdigi.go.id" />
   <title>Internet Positif - Akses Dibatasi | Komdigi Trust+ Filtering System</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   {@html `<script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -248,7 +247,7 @@
   }
 
   :global(body) {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     background-color: var(--bg-page);
     color: var(--text-main);
     line-height: 1.5;
